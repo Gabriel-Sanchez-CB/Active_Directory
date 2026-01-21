@@ -20,7 +20,7 @@ Once the domain was fully configured and network connectivity was verified, I im
 
 This process replicates a common task in enterprise environments, where administrators must provision large numbers of user accounts efficiently and consistently. Automation not only reduces setup time but also minimizes human error and ensures a standardized account structure across Active Directory.
 
-![Architecture Diagram](image/Screenshots/Users.png)
+
 
 ## DHCP Server Configuration
 
