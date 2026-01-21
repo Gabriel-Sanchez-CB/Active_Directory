@@ -1,1 +1,1 @@
-Screenshots used to document Active Directory configuration and management
+# Screenshots used to document Active Directory configuration and management
