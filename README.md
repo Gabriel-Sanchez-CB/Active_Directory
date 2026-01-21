@@ -16,7 +16,7 @@ The Domain Controller provides essential services within the internal network, i
 ## User Creation Automation with Power Shell Script
 Once the domain was fully configured and network connectivity was verified, I implemented automated user creation in Active Directory. To achieve this, I used PowerShell along with a script that imports a list of names from a text file and generates multiple user accounts automatically within the domain.
 
-![Demo del script](video/PowerShell%20Script/PowerShellScriptMP4.gif) 
+![Demo_script](video/PowerShell%20Script/PowerShellScriptMP4.gif) 
 
 This process replicates a common task in enterprise environments, where administrators must provision large numbers of user accounts efficiently and consistently. Automation not only reduces setup time but also minimizes human error and ensures a standardized account structure across Active Directory.
 
@@ -27,5 +27,25 @@ This process replicates a common task in enterprise environments, where administ
 To ensure that client machines received IP addressing automatically within the internal network, I configured the DHCP server on the Domain Controller. I defined a scope with an address range from 172.16.0.100 to 172.16.0.200, using a subnet mask of 255.255.255.0.
 
 I also set the default gateway to 172.16.0.1, corresponding to the server’s internal network interface, and configured the DNS server with the same address to allow proper domain name resolution. This setup ensured stable network assignment and seamless integration of client machines into the Active Directory environment.
+
+![DHCP_Server](image/Screenshots/DHCP.png)
+
+## Joining the Client to the Domain
+
+With network services and Active Directory operating correctly, I proceeded to join the client machine to the domain. First, I verified that the system obtained an IP address from the DHCP server and correctly resolved the domain name through DNS.
+
+![Domain_Client2](image/Screenshots/Domain_Client2.png) 
+
+Next, from the Windows system settings, I entered the domain name and used administrative credentials to complete the domain join process. After restarting the machine, I confirmed that the client was successfully integrated into the domain and that login was possible using the user accounts previously created in Active Directory.
+
+![Domain](image/Screenshots/Cliente_Domain.png)
+
+# Full Deployment Documentation
+
+This repository provides a high-level overview of the lab and its core configurations. However, for those who want to explore the implementation in greater depth, I created a comprehensive technical guide in PDF format that documents each phase of the lab step by step.
+
+This documentation includes configuration screenshots, detailed explanations of deployed services, network architecture, automation scripts, and validation procedures performed throughout the setup. It is intended for anyone who wants to fully replicate the lab or use it as a structured learning reference for Active Directory administration.
+
+You can access the complete guide at the following link: ![Book](GuideBook/GuideBook_Active_Directory.pdf) 
 
 
