@@ -1,4 +1,4 @@
-# Active Directory Home Lab
+# Active Directory Domain Services
 
 ## Project Overview
 
@@ -46,6 +46,7 @@ This repository provides a high-level overview of the lab and its core configura
 
 This documentation includes configuration screenshots, detailed explanations of deployed services, network architecture, automation scripts, and validation procedures performed throughout the setup. It is intended for anyone who wants to fully replicate the lab or use it as a structured learning reference for Active Directory administration.
 
-You can access the complete guide at the following link: ![Book](GuideBook/GuideBook_Active_Directory.pdf) 
+📖 **[Full Deployment Guide – Active Directory Domain Services](GuideBook/GuideBook_Active_Directory.pdf)**
+
 
 
