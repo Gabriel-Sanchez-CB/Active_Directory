@@ -9,6 +9,11 @@ To accomplish this, I used VMware as the virtualization platform, where I deploy
 ## Network Diagram
 In this lab, I designed a network topology where the Domain Controller (DC) uses two network interfaces to separate internal domain communication from external connectivity. The first interface is connected to a NAT network provided by VMware, allowing the server and lab environment to access the Internet for updates and external services without directly exposing the internal network. The second interface is connected to an isolated internal network, dedicated exclusively to communication between the Domain Controller and the client machines within the domain.
 
-
+![Architecture Diagram](image/Screenshots/diagram.png)
 
 The Domain Controller provides essential services within the internal network, including DNS, DHCP, Active Directory Domain Services (AD DS), and Remote Access/NAT, ensuring that client machines receive IP addressing, resolve domain names, and successfully join the domain. This architecture replicates a real-world enterprise network design, offering a controlled, secure, and functional environment for practicing Active Directory administration.
+
+## User Creation Automation with Power Shell Script
+Once the domain was fully configured and network connectivity was verified, I implemented automated user creation in Active Directory. To achieve this, I used PowerShell along with a script that imports a list of names from a text file and generates multiple user accounts automatically within the domain.
+
+This process replicates a common task in enterprise environments, where administrators must provision large numbers of user accounts efficiently and consistently. Automation not only reduces setup time but also minimizes human error and ensures a standardized account structure across Active Directory.
