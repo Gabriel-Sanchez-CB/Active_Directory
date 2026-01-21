@@ -28,4 +28,4 @@ To ensure that client machines received IP addressing automatically within the i
 
 I also set the default gateway to 172.16.0.1, corresponding to the server’s internal network interface, and configured the DNS server with the same address to allow proper domain name resolution. This setup ensured stable network assignment and seamless integration of client machines into the Active Directory environment.
 
-![Architecture Diagram](image/Screenshots/DHCP.png) 
+
