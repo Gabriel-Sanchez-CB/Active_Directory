@@ -4,6 +4,8 @@
 
 In this project, I implemented an Active Directory home lab in a virtualized environment, designed to simulate a basic enterprise Windows infrastructure. My main objective was to build a fully functional domain from scratch to understand the architecture, core services, and administrative processes commonly found in real corporate environments.
 
+📖 **[Full Deployment Guide – Active Directory Domain Services](GuideBook/GuideBook_Active_Directory.pdf)**
+
 
 ## Network Diagram
 In this lab, I designed a network topology where the Domain Controller (DC) uses two network interfaces to separate internal domain communication from external connectivity. The first interface is connected to a NAT network provided by VMware, allowing the server and lab environment to access the Internet for updates and external services without directly exposing the internal network. The second interface is connected to an isolated internal network, dedicated exclusively to communication between the Domain Controller and the client machines within the domain.
@@ -39,13 +41,15 @@ Next, from the Windows system settings, I entered the domain name and used admin
 
 ![Domain](image/Screenshots/Cliente_Domain.png)
 
-# Full Deployment Documentation
+# Full Deployment Guide
 
-This repository provides a high-level overview of the lab and its core configurations. However, for those who want to explore the implementation in greater depth, I created a comprehensive technical guide in PDF format that documents each phase of the lab step by step.
+This repository provides a high-level overview of the lab and its core configurations. However, for those interested in a deeper exploration of the implementation, I have created a comprehensive technical guide in PDF format. This guide documents each phase of the lab step by step.
 
-This documentation includes configuration screenshots, detailed explanations of deployed services, network architecture, automation scripts, and validation procedures performed throughout the setup. It is intended for anyone who wants to fully replicate the lab or use it as a structured learning reference for Active Directory administration.
+The documentation includes configuration screenshots, detailed explanations of deployed services, network architecture, automation scripts, and the validation procedures performed throughout the setup. It is designed for anyone who wishes to fully replicate the lab or use it as a structured learning resource for Active Directory administration.
 
-📖 **[Full Deployment Guide – Active Directory Domain Services](GuideBook/GuideBook_Active_Directory.pdf)**
+**Please note:** The full deployment documentation is available at the beginning of the page and is essential to read if you didn’t fully grasp the concepts covered in the lab overview.
+
+
 
 
 
