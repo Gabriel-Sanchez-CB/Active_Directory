@@ -1,6 +1,6 @@
 # Active Directory Domain Services
 
-## Project Overview
+## Overview
 
 In this project, I implemented an Active Directory home lab in a virtualized environment, designed to simulate a basic enterprise Windows infrastructure. My main objective was to build a fully functional domain from scratch to understand the architecture, core services, and administrative processes commonly found in real corporate environments.
 
